@@ -5,15 +5,16 @@ import time;
 from selenium import webdriver;
 
 #Tiempo para refrescas la página
-Timer = 150
+Timer = 5
 
 #Enlace (Blog, YouTube)
-enlace =https://youtu.be/2eywdrUyOfA?si=HvTFi3C52ncbqp9a
+enlace = 'https://www.youtube.com/watch?v=Auzs95InJzo'
+
 #Número visitas
 views = 1000
 
 #driver
-driver = webdriver.Chrome (ID: cjighmmbcdpbfnhinpakjloafcpmefgl)
+driver = webdriver.Chrome("C:/gisbook/chromedriver.exe")
 driver.get(enlace)
 
 for i in range(views):
